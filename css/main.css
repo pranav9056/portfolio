@@ -1,0 +1,19 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-me{
+  display: flex;
+}
+.img{
+  width: 50%;
+}
+img{
+  max-width: 100%;
+}
+.bio{
+  width: 50%;
+}
+.featured-work{
+  display: flex;
+}

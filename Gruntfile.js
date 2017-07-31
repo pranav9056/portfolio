@@ -1,6 +1,34 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
+  var config = grunt.file.readYAML('Gruntconfig.yml')
   grunt.initConfig({
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: config.cssDir,
+          src: ['*.css', '!*.min.css'],
+          dest: config.mincssDir,
+          ext: '.min.css'
+        }]
+      }
+    },
+    concat: {
+      dist: {
+        src: config.mincssDir+'*.min.css',
+        dest: config.concatmincssDir+'min_concat.css'
+      }
+    },
+    connect: {
+      server:{
+        port: 9000,
+        hostname: 'localhost',
+        base: ['.'],
+        livereload: true
+      }
+    },
+
+
     responsive_images: {
       dev: {
         options: {
@@ -59,14 +87,33 @@ module.exports = function(grunt) {
         }]
       },
     },
+    watch: {
+      options: {
+        livereload: true,
+      },
+      cssmin: {
+        files: [config.cssDir + '*.css', config.cssDir + '!*.min.css'],
+        tasks: ['cssmin']
+      },
+      concat: {
+        files: [config.mincssDir + '*.min.css'],
+        tasks: ['concat']
+      },
+      html:{
+        files: 'index.html',
+      }
+    }
+
+
   });
 
 
   grunt.registerTask('default', [
-    'clean',
-    'mkdir',
-    'copy',
-    'responsive_images'
+    'cssmin',
+    'concat',
+    'connect',
+    'watch'
+
   ]);
 
 };

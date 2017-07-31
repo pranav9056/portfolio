@@ -1,0 +1,5 @@
+cssDir: css/
+mincssDir: css-min/
+concatmincssDir: css-min/concat/
+imgDir: images/
+imgGDir: src/resize
