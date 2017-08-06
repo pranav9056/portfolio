@@ -45,6 +45,13 @@ module.exports = function(grunt) {
             suffix: '_medium_1x',
             quality:30
 
+          },
+          {
+            aspectratio: false,
+            width: 500,
+            gravity: 'west',
+            suffix: 'c'
+
           }]
         },
 
@@ -55,8 +62,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          cwd: config.imgDir,
+          dest: config.imgReDir
         }]
       }
     },
@@ -64,7 +71,7 @@ module.exports = function(grunt) {
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['images'],
+        src: [config.imgDir],
       },
     },
 
@@ -72,7 +79,7 @@ module.exports = function(grunt) {
     mkdir: {
       dev: {
         options: {
-          create: ['images']
+          create: [config.imgDir]
         },
       },
     },
@@ -112,6 +119,7 @@ module.exports = function(grunt) {
     'cssmin',
     'concat',
     'connect',
+    'responsive_images',
     'watch'
 
   ]);

@@ -3,7 +3,17 @@
   flex-wrap: wrap;
 }
 .about-me{
+  background-image:  url("../../../img/back.jpg");
+  background-size: cover;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
   display: flex;
+}
+.bio p{
+  color: white;
+  text-align: center;
+  text-align: left;
 }
 .img{
   width: 50%;
@@ -15,5 +25,13 @@ img{
   width: 50%;
 }
 .featured-work{
+}
+.featured-work-content{
   display: flex;
+}
+.other-work-content{
+  display: flex;
+}
+.p{
+  display: block;
 }
