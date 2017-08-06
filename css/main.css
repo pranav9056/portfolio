@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .about-me{
-  background-image:  url("../../../img/back.jpg");
+  background-image:  url("../../img/back.jpg");
   background-size: cover;
   align-items: center;
   width: 100%;
