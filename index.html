@@ -1,121 +1,125 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
   <title>Pranav's Portfolio</title>
   <meta charset="utf-8">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0 initial-scale=1.0">
-  <link rel="stylesheet" href="css-min/concat/min_concat.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css-min/concat/min_concat.css">
   <script src="https://use.fontawesome.com/a8c30f83b9.js"></script>
+
 
 </head>
 <body>
   <header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse ">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <i class="fa  fa-code" aria-hidden="true"></i>
+            <i class="fa fa-repeat fa-spin" aria-hidden="true"></i>
 
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse ">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
-          <i class="fa fa-bed" aria-hidden="true"></i>
-          <i class="fa  fa-code" aria-hidden="true"></i>
-          <i class="fa fa-repeat fa-spin" aria-hidden="true"></i>
+          </a>
+        </div>
 
-        </a>
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about-me">About Me <span class="sr-only">(current)</span></a></li>
+            <li><a href="#featured-work">Featured Work</a></li>
+            <li><a href="#other-work">Other Work</a></li>
+          </ul>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#about-me">About Me <span class="sr-only">(current)</span></a></li>
-          <li><a href="#featured-work">Featured Work</a></li>
-          <li><a href="#other-work">Other Work</a></li>
-        </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Pranav Jain</a></li>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Pranav Jain</a></li>
-
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  </header>
-  <section class="content">
-    <section class="">
-      <div class="about-me" id="about-me">
-        <div class="img">
-          <img src="img/my.jpg" alt="" class = "my-img">
-
-        </div>
-        <div class="bio">
-          <p>I am Majoring in Computer Science at University of Buffalo.
-            New technologies and innovations intrigue me.
-            I am interested in autonomous driving vehicles, working on a visual SLAM problem.
-            Love to code in python.I thoroughly enjoy working on projects that challenge me and make me learn new things.
-            Previously worked on Django and Bootstrap. Currently doing a front end Nanodegree course from Udacity </p>
-        </div>
-      </div>
-    </section>
-    <section class="featured-work" id ="featured-work">
-      <h2>Featured Work</h2>
-      <div class="featured-work-content">
-        <div class="p1 p">
-          <img src="https://placeimg.com/450/300/arch" alt="">
-          <h3>
-            <a href="https://github.com/pranav9056/portfolio">Portfolio</a>
-          </h3>
-        </div>
-        <div class="p2 p">
-          <img src="https://placeimg.com/450/300/arch" alt="">
-          <h3>
-            Resume
-          </h3>
-        </div>
-        <div class="p3 p">
-          <img src="https://placeimg.com/450/300/arch" alt="">
-          <h3>
-            Classic Arcade Game
-          </h3>
-        </div>
-      </div>
-    </section>
-    <section class="other-work" id="other-work">
-      <h2>Other Work</h2>
-      <div class="other-work-content">
-        <div class="p4 p">
-          <img src="https://placeimg.com/300/200/arch" alt="">
-          <a href="https://github.com/pranav9056/bow">Loop Closure</a>
-        </div>
-        <div class="p5 p">
-          <img src="https://placeimg.com/300/200/arch" alt="">
-          <a href="https://github.com/pranav9056/Distributed-Systems">Messenger</a>
-        </div>
-        <div class="p6 p">
-          <img src="https://placeimg.com/300/200/arch" alt="">
-          <a href="https://github.com/pranav9056/Distributed-Systems/tree/master/SimpleDht">DHT</a>
-        </div>
-        <div class="p7 p">
-          <img src="https://placeimg.com/300/200/arch" alt="">
-          <a href="https://github.com/pranav9056/Distributed-Systems/tree/master/SimpleDynamo">Dynamo</a>
-        </div>
-      </div>
-    </section>
-  </section>
-  <footer>
-    <nav class="links">
-      <a href="https://github.com/pranav9056">github</a>
-      <a href="https://www.linkedin.com/in/pranav9056/">linkedin</a>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-  </footer>
+  </header>
+  <main>
+    <section class="content">
+      <section class="intro">
+        <div class="about-me" id="about-me">
+          <div class="img-container">
+            <img src="img/my1.jpg" alt="" class = "my-img">
+          </div>
+          <div class="bio">
+            <p>I am Majoring in Computer Science at University of Buffalo.
+              New technologies and innovations intrigue me.
+              I am interested in autonomous driving vehicles, working on a visual SLAM problem.
+              Love to code in python.I thoroughly enjoy working on projects that challenge me and make me learn new things.
+              Previously worked on Django and Bootstrap. Currently doing a front end Nanodegree course from Udacity </p>
+          </div>
+        </div>
+      </section>
+      <section class="featured-work spacer-up" id ="featured-work">
+        <h2>Featured Work</h2>
+        <div class="featured-work-content">
+          <div class="p1 card">
+            <div class="card-upper">
+              <img src="img/csshtml.jpg" alt="">
+            </div>
+            <div class="card-lower">
+              <h3>
+                <a href="https://github.com/pranav9056/portfolio">Portfolio</a>
+              </h3>
+            </div>
+          </div>
+          <div class="p2 card">
+            <img src="img/soon.jpg" alt="">
+            <h3>
+              Resume
+            </h3>
+          </div>
+          <div class="p3 card">
+            <img src="img/soon.jpg" alt="">
+            <h3>
+              Classic Arcade Game
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="other-work spacer-up" id="other-work">
+        <h2>Other Work</h2>
+        <div class="other-work-content">
+          <div class="p4 card">
+            <img src="img/python.jpg" alt="">
+            <a href="https://github.com/pranav9056/bow">Loop Closure</a>
+          </div>
+          <div class="p5 card">
+            <img src="img/android2.jpg" alt="">
+            <a href="https://github.com/pranav9056/Distributed-Systems">Messenger</a>
+          </div>
+          <div class="p6 card">
+            <img src="img/android2.jpg" alt="">
+            <a href="https://github.com/pranav9056/Distributed-Systems/tree/master/SimpleDht">DHT</a>
+          </div>
+          <div class="p7 card">
+            <img src="img/android2.jpg" alt="">
+            <a href="https://github.com/pranav9056/Distributed-Systems/tree/master/SimpleDynamo">Dynamo</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <nav class="links">
+        <a href="https://github.com/pranav9056">github</a>
+        <a href="https://www.linkedin.com/in/pranav9056/">linkedin</a>
+      </nav>
+    </footer>
+  </main>
   <script src="//localhost:35729/livereload.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
