@@ -3,28 +3,36 @@
     flex-flow: column;
     justify-content:center;
   }
-  .img-container{
 
+  .img-container{
     max-width: 100%;
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
+
   .bio{
     margin-top: 10px;
     font-size: 1em;
     max-width: 80%;
   }
-
-
 }
+
 @media screen and (min-width:501px) and (max-width:649px) {
   .bio{
     margin-right: 10px;
   }
+}
+
+@media screen and (min-width:650px) {
+  .more-info{
+    display: block;
+  }
+}
+
 @media screen and (min-width:650px) and (max-width:800px) {
   .bio{
     margin-right: 20px;
   }
-
 }

@@ -13,12 +13,15 @@ body, html {
   display: flex;
   flex-wrap: wrap;
 }
+
 .spacer-up{
   padding-top: 30px;
 }
+
 .spacer-down{
   padding-bottom: 15px;
 }
+
 .about-me{
   background-image:  image-set(url("../../img/resize/back-800_medium_1x.jpg") 1x,url("../../img/resize/back-1600_large_2x.jpg") 2x);
   background-image:  -webkit-image-set(url("../../img/resize/back-800_medium_1x.jpg") 1x,url("../../img/resize/back-1600_large_2x.jpg") 2x);
@@ -30,13 +33,11 @@ body, html {
   justify-content: space-around;
 }
 
-
 .img-container{
   max-width: 50%;
   width: 300px;
   height: 300px;
 }
-
 
 .my-img{
   display: block;
@@ -55,25 +56,30 @@ img{
 
 .bio{
   max-width: 50%;
-
 }
 
 .bio p{
   color: #ECEDDC;
   text-align:center;
   font-size: 1.2em;
+}
 
+.more-info{
+  display: none;
 }
 
 .featured-work{
   max-width: 100%;
 }
+
 .featured-work-content{
   display: flex;
 }
+
 .other-work-content{
   display: flex;
 }
+
 .card{
   display: block;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
