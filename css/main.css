@@ -52,6 +52,7 @@ body, html {
 
 img{
   max-width: 100%;
+
 }
 
 .bio{
@@ -70,25 +71,62 @@ img{
 
 .featured-work{
   max-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .featured-work-content{
   display: flex;
 }
 
+.other-work{
+}
+
 .other-work-content{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card{
-  display: block;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 40%;
   border-radius: 5px;
-  margin: 5px;
+  margin-right: 10px;
+}
+.card:last-child{
+  margin-right: 0px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card-image{
+  max-width: 100%;
+}
+
+.card-info{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.card-title{
+  width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  text-align: center;
+
+}
+.card-description{
+  width: 70%;
+  padding: 0px 10px;
+}
+.fw-card{
+  width: 33%;
 }
