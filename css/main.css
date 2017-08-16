@@ -96,10 +96,10 @@ img{
   margin-right: 10px;
 }
 .card:last-child{
-  margin-right: 0px;
+  margin: 0px;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-image{
@@ -121,12 +121,13 @@ img{
   padding-right: 10px;
   margin-right: 10px;
   text-align: center;
-
 }
+
 .card-description{
   width: 70%;
   padding: 0px 10px;
 }
+
 .fw-card{
   width: 33%;
 }
