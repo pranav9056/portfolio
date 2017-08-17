@@ -2,4 +2,5 @@ cssDir: css/
 mincssDir: css-min/
 concatmincssDir: css-min/concat/
 imgDir: img/
+imgThumb: img/thumbnail
 imgReDir: img/resize

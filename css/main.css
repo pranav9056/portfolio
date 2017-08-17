@@ -2,6 +2,14 @@ header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
 
+*{
+  font-family: 'Muli','Inconsolata', monospace;
+}
+
+.intro{
+  font-family: 'Inconsolata', monospace;
+}
+
 body, html {
   margin: 0;
   padding:  0;
@@ -163,14 +171,17 @@ footer{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 footer nav{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 footer a {
   margin: 5px;
 }
+
 a:hover{
   text-decoration: none;
 }

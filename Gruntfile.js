@@ -65,7 +65,41 @@ module.exports = function(grunt) {
           cwd: config.imgDir,
           dest: config.imgReDir
         }]
+      },
+      thumb:{
+        options: {
+          sizes: [{
+
+            width: 750,
+            quality:60
+
+          },
+          {
+
+            width: 550,
+            quality:60
+
+          },
+          {
+            width: 350,
+            quality:60
+          }]
+        },
+
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          src: ['*.{gif,jpg,png}'],
+          cwd: config.imgThumb,
+          dest: config.imgReDir
+        }]
+
       }
+
+
     },
 
     /* Clear out the images directory if it exists */
