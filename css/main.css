@@ -158,3 +158,19 @@ h2{
 .ot-card .card-description{
   width: 100%;
 }
+
+footer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer a {
+  margin: 5px;
+}
+a:hover{
+  text-decoration: none;
+}
