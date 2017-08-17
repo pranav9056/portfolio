@@ -54,9 +54,9 @@
   }
 
   .fw-card{
-    width: calc((100% - 10px)/2);
-    margin-right: 10px;
-    margin-bottom: 10px;
+    width: calc((100% - 20px)/2);
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   .fw-card:nth-child(2){
@@ -85,5 +85,28 @@
   .fw-card{
     width: 100%;
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .other-work-content{
+    justify-content: center;
+  }
+  .ot-card{
+    width: calc((80% - 20px)/2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .ot-card:nth-child(2){
+    margin-right: 0;
+  }
+  .ot-card:last-child{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width:549px) {
+  .ot-card{
+    width: 100%;
+    margin-right: 0;
   }
 }
