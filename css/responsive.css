@@ -92,7 +92,7 @@
   .other-work-content{
     justify-content: center;
   }
-  
+
   .ot-card{
     width: calc((80% - 20px)/2);
     margin-right: 20px;
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1650px) {
   .content{
     width: 1600px;
     margin: 0 auto;
