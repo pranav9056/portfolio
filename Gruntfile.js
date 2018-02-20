@@ -36,14 +36,14 @@ module.exports = function(grunt) {
 
             width: 1600 ,
             suffix: '_large_2x',
-            quality:100
+            quality:50
 
           },
           {
 
             width: 800 ,
             suffix: '_medium_1x',
-            quality:100
+            quality:50
 
           },
           {
